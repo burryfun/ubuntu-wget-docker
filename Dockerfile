@@ -3,7 +3,7 @@ FROM ubuntu
 # ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
-    gti \
+    git \
     wget
 
 RUN git clone https://github.com/burryfun/nginx_wget.git /opt/nginx_wget
